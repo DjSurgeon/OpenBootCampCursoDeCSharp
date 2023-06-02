@@ -1,2 +1,2 @@
 # OpenBootCampCursoDeCSharp
-Ejercicios correspondientes al curso de C# del Campu Open Bootcam
+Ejercicios correspondientes al curso de C# del Campus Open Bootcam
