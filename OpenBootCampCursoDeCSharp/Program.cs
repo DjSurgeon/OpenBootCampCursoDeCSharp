@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net;
+using System.Runtime.Remoting;
 using System.Security.Cryptography;
 
 namespace OpenBootCampCursoDeCSharp
@@ -14,6 +15,7 @@ namespace OpenBootCampCursoDeCSharp
             Ejercicio3();
             Ejercicio4();
             Ejercicio5();
+            Ejercicio6();
         }
         // Resolución Ejercicio 1
         // Escribe un programa que reciba tu nombre y lo escriba por consola.
@@ -106,6 +108,7 @@ namespace OpenBootCampCursoDeCSharp
         // Nota: puedes escribir estos datos por consola si prefieres verlos.La idea del ejercicio es almacenar los datos en los tipos más adecuados.
         public static void Ejercicio5()
         {
+            Console.WriteLine("\tEjercicio 5.");
             int numero = 8;
             if ( numero > 18 ) 
             {
@@ -123,6 +126,29 @@ namespace OpenBootCampCursoDeCSharp
             if ( numero > 18 && caracter == 'A')
             {
                 Console.WriteLine("Una de la condiciones es True y la otra False");
+            }
+        }
+        // Ejercicio 6
+        // Crea una estructura de datos para un cliente con estos campos:
+        // Nombre completo
+        // Teléfono
+        // Dirección
+        // Email
+        // Si es nuevo cliente
+        // Bonus: escribe un método para presentar estos datos desde la estructura al hacer Console.WriteLine(...)
+        public static void Ejercicio6()
+        {
+            Console.WriteLine("\tEjercicio 6.");
+            object[] cliente = new object[5];
+            cliente[0] = "Noa Jiménez Matobella";
+            cliente[1] = 34555789234;
+            cliente[2] = "C/Programacion en C#, Nº 2";
+            cliente[3] = "noa.jim348@programacion.es";
+            cliente[4] = true;
+
+            foreach ( object datos in cliente ) 
+            {
+                Console.WriteLine(datos);
             }
         }
 
